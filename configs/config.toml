@@ -1,0 +1,19 @@
+title = "demo server"
+
+[server]
+path = "demo"
+port = 8081
+
+[db]
+dsn = "host=localhost user=book password=book dbname=book port=5432 sslmode=disable TimeZone=Asia/Shanghai"
+maxOpen = 3
+maxIdle = 10
+maxLifetime = 10 # unit: second
+
+[logger]
+filename = "log/template.log"
+maxSize = 10
+maxAge = 30
+compress = true
+localTime = true
+logLevel = "info"
